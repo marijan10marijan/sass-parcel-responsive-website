@@ -1,0 +1,87 @@
+@use '../abstracts/variables';
+
+main {
+    padding-top: 60px;
+
+    .main {
+        position: relative;
+
+        &__img {
+            position: absolute;
+            right: 0;
+            top: 1rem;
+            z-index: -1;
+
+            & img {
+                height: 460px;
+                width: 550px;
+            }
+        }
+
+        &__content {
+            padding-top: 5rem;
+            width: 50%;
+        }
+
+        &__title {
+            font-size: 4rem;
+            color: variables.$text-color-primary;
+            margin-bottom: 1rem;
+        }
+
+        &__paragraph {
+            color: variables.$text-white;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        &__buttons {
+            gap: 1.4rem;
+
+            .main__buttonOne {
+                background-color: transparent;
+                color: variables.$text-white;
+            }
+
+            .main__buttonTwo {
+                background-color: variables.$text-color-primary;
+                color: variables.$text-color-secondary;
+            }
+        }
+
+
+    }
+}
+
+
+// MAIN BREAKPOINTS MAX-WIDTH:768PX
+
+@media(max-width:768px) {
+    main {
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            &__img {
+                position: unset;
+            }
+
+            &__img img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &__content {
+                width: 80%;
+                margin: auto;
+
+            }
+
+            &__title {
+                font-size: 3rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,52 @@
+@use '../abstracts/variables';
+
+.why {
+    padding: 5rem 0;
+
+    &__container {
+        gap: 5rem;
+    }
+
+
+    &__content {
+        color: white;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__paragraphBig {
+        font-size: 1.2rem;
+        margin-bottom: 1.4rem;
+        line-height: 1.4;
+    }
+
+    &__paragraphSmall {
+        font-size: .9rem;
+        color: variables.$text-white;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+    }
+
+    &__button {
+        background-color: variables.$text-color-primary;
+        color: variables.$text-color-secondary;
+    }
+}
+
+// ABOUT BREAKPOINTS MAX-WIDTH:768PX
+@media(max-width:768px) {
+    .why {
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__img img {
+            height: 450px;
+        }
+    }
+}

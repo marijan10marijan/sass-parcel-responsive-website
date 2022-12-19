@@ -1,0 +1,13 @@
+@use '../abstracts/variables';
+
+.button {
+    padding: .5rem 1.2rem;
+    border-radius: 5px;
+    border: 1px solid variables.$text-white;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.button:hover {
+    opacity: .6;
+}

@@ -1,0 +1,55 @@
+// CONTAINER CUSTOM CLASS 
+// *************************************
+.container {
+    width: min(950px, 95%);
+    margin: auto;
+}
+
+
+// FLEX CUSTOM CLASS 
+// *************************************
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    &-column {
+        flex-direction: column;
+    }
+
+    &-wrap {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+// GRID CUSTOM CLASS 
+// *************************************
+.grid {
+    display: grid;
+
+    &-basic {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    &-large {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    &-pi-c {
+        place-items: center;
+    }
+}
