@@ -1,7 +1,7 @@
 # sass-parcel-responsive-website
 
 #### To start project you need install Parcel(build tool).
-#### Easiest way to install Parcel is using npm(node packet menager).
+#### Easiest way to install Parcel is using npm(node packet manager).
 #### Install Parcel into your app using npm:  --> npm install --save-dev parcel
 
 
